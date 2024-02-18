@@ -24,7 +24,7 @@ class SplashViewController: UIViewController {
     /** Navigates to login screen for authentication. */
     func navigateToLogin() {
         // TODO: Prepare login screen.
-        // navigationPushViewController(createViewController(of: LoginViewController.self))
+        navigationPushViewController(createViewController(of: LoginViewController.self))
     }
     
 }
