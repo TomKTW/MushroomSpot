@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D3500AFC7D6F2BF6074354B /* Pods_MushroomSpot_MushroomSpotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CEBB97A9EB66FFE4B576019 /* Pods_MushroomSpot_MushroomSpotUITests.framework */; };
+		617AB20BB7CA50195A86BEFC /* Pods_MushroomSpot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821AFFC9C899C87DA30B45D1 /* Pods_MushroomSpot.framework */; };
+		746E1CC2923EA651732CF5DE /* Pods_MushroomSpotTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481FCF7735D2E30AE5834042 /* Pods_MushroomSpotTests.framework */; };
 		E22EF9312B811CA700C8674F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9302B811CA700C8674F /* AppDelegate.swift */; };
 		E22EF9332B811CA700C8674F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9322B811CA700C8674F /* SceneDelegate.swift */; };
 		E22EF9352B811CA700C8674F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9342B811CA700C8674F /* ViewController.swift */; };
@@ -36,6 +39,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		481FCF7735D2E30AE5834042 /* Pods_MushroomSpotTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushroomSpotTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CEBB97A9EB66FFE4B576019 /* Pods_MushroomSpot_MushroomSpotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushroomSpot_MushroomSpotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72352B9E55E09F3444FB4D10 /* Pods-MushroomSpotTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSpotTests.debug.xcconfig"; path = "Target Support Files/Pods-MushroomSpotTests/Pods-MushroomSpotTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DE4ED4EAA32CAEFCE1FCE33 /* Pods-MushroomSpotTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSpotTests.release.xcconfig"; path = "Target Support Files/Pods-MushroomSpotTests/Pods-MushroomSpotTests.release.xcconfig"; sourceTree = "<group>"; };
+		821AFFC9C899C87DA30B45D1 /* Pods_MushroomSpot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MushroomSpot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C02F21C9B9F2C7548B34DD /* Pods-MushroomSpot-MushroomSpotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSpot-MushroomSpotUITests.debug.xcconfig"; path = "Target Support Files/Pods-MushroomSpot-MushroomSpotUITests/Pods-MushroomSpot-MushroomSpotUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC6443CC1A92611097C53681 /* Pods-MushroomSpot-MushroomSpotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSpot-MushroomSpotUITests.release.xcconfig"; path = "Target Support Files/Pods-MushroomSpot-MushroomSpotUITests/Pods-MushroomSpot-MushroomSpotUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9E23AF37F40961AA86071E2 /* Pods-MushroomSpot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSpot.debug.xcconfig"; path = "Target Support Files/Pods-MushroomSpot/Pods-MushroomSpot.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC97688A41C3BAE32C002CF /* Pods-MushroomSpot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MushroomSpot.release.xcconfig"; path = "Target Support Files/Pods-MushroomSpot/Pods-MushroomSpot.release.xcconfig"; sourceTree = "<group>"; };
 		E22EF92D2B811CA700C8674F /* MushroomSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MushroomSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22EF9302B811CA700C8674F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E22EF9322B811CA700C8674F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617AB20BB7CA50195A86BEFC /* Pods_MushroomSpot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746E1CC2923EA651732CF5DE /* Pods_MushroomSpotTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D3500AFC7D6F2BF6074354B /* Pods_MushroomSpot_MushroomSpotUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24C2ADC0128CCB91DC45400A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				821AFFC9C899C87DA30B45D1 /* Pods_MushroomSpot.framework */,
+				4CEBB97A9EB66FFE4B576019 /* Pods_MushroomSpot_MushroomSpotUITests.framework */,
+				481FCF7735D2E30AE5834042 /* Pods_MushroomSpotTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACAD41B05B01F1164F5AF311 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9E23AF37F40961AA86071E2 /* Pods-MushroomSpot.debug.xcconfig */,
+				DAC97688A41C3BAE32C002CF /* Pods-MushroomSpot.release.xcconfig */,
+				94C02F21C9B9F2C7548B34DD /* Pods-MushroomSpot-MushroomSpotUITests.debug.xcconfig */,
+				AC6443CC1A92611097C53681 /* Pods-MushroomSpot-MushroomSpotUITests.release.xcconfig */,
+				72352B9E55E09F3444FB4D10 /* Pods-MushroomSpotTests.debug.xcconfig */,
+				7DE4ED4EAA32CAEFCE1FCE33 /* Pods-MushroomSpotTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E22EF9242B811CA600C8674F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				E22EF9462B811CA800C8674F /* MushroomSpotTests */,
 				E22EF9502B811CA800C8674F /* MushroomSpotUITests */,
 				E22EF92E2B811CA700C8674F /* Products */,
+				ACAD41B05B01F1164F5AF311 /* Pods */,
+				24C2ADC0128CCB91DC45400A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E22EF9572B811CA800C8674F /* Build configuration list for PBXNativeTarget "MushroomSpot" */;
 			buildPhases = (
+				08B8094B726D49F644F33548 /* [CP] Check Pods Manifest.lock */,
 				E22EF9292B811CA700C8674F /* Sources */,
 				E22EF92A2B811CA700C8674F /* Frameworks */,
 				E22EF92B2B811CA700C8674F /* Resources */,
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E22EF95A2B811CA800C8674F /* Build configuration list for PBXNativeTarget "MushroomSpotTests" */;
 			buildPhases = (
+				96E11D6CDDCD9AD5615D028D /* [CP] Check Pods Manifest.lock */,
 				E22EF93F2B811CA800C8674F /* Sources */,
 				E22EF9402B811CA800C8674F /* Frameworks */,
 				E22EF9412B811CA800C8674F /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E22EF95D2B811CA800C8674F /* Build configuration list for PBXNativeTarget "MushroomSpotUITests" */;
 			buildPhases = (
+				9FD7DE2AD783C8855D78EB3E /* [CP] Check Pods Manifest.lock */,
 				E22EF9492B811CA800C8674F /* Sources */,
 				E22EF94A2B811CA800C8674F /* Frameworks */,
 				E22EF94B2B811CA800C8674F /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		08B8094B726D49F644F33548 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MushroomSpot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96E11D6CDDCD9AD5615D028D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MushroomSpotTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FD7DE2AD783C8855D78EB3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MushroomSpot-MushroomSpotUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E22EF9292B811CA700C8674F /* Sources */ = {
@@ -437,6 +550,7 @@
 		};
 		E22EF9582B811CA800C8674F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E23AF37F40961AA86071E2 /* Pods-MushroomSpot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +578,7 @@
 		};
 		E22EF9592B811CA800C8674F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC97688A41C3BAE32C002CF /* Pods-MushroomSpot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,6 +606,7 @@
 		};
 		E22EF95B2B811CA800C8674F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72352B9E55E09F3444FB4D10 /* Pods-MushroomSpotTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +626,7 @@
 		};
 		E22EF95C2B811CA800C8674F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE4ED4EAA32CAEFCE1FCE33 /* Pods-MushroomSpotTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -529,6 +646,7 @@
 		};
 		E22EF95E2B811CA800C8674F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C02F21C9B9F2C7548B34DD /* Pods-MushroomSpot-MushroomSpotUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +664,7 @@
 		};
 		E22EF95F2B811CA800C8674F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6443CC1A92611097C53681 /* Pods-MushroomSpot-MushroomSpotUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
