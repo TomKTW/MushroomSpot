@@ -19,6 +19,9 @@
 		E22EF9482B811CA800C8674F /* MushroomSpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9472B811CA800C8674F /* MushroomSpotTests.swift */; };
 		E22EF9522B811CA800C8674F /* MushroomSpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9512B811CA800C8674F /* MushroomSpotUITests.swift */; };
 		E22EF9542B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9532B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift */; };
+		E2F67AE82B8243520087CD7D /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */; };
+		E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AE92B8243770087CD7D /* SplashViewController.swift */; };
+		E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		E22EF94D2B811CA800C8674F /* MushroomSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MushroomSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22EF9512B811CA800C8674F /* MushroomSpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITests.swift; sourceTree = "<group>"; };
 		E22EF9532B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
+		E2F67AE92B8243770087CD7D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +117,6 @@
 				72352B9E55E09F3444FB4D10 /* Pods-MushroomSpotTests.debug.xcconfig */,
 				7DE4ED4EAA32CAEFCE1FCE33 /* Pods-MushroomSpotTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +145,8 @@
 		E22EF92F2B811CA700C8674F /* MushroomSpot */ = {
 			isa = PBXGroup;
 			children = (
+				E2F67AEB2B82440D0087CD7D /* Extension */,
+				E2F67AE32B82423F0087CD7D /* Splash */,
 				E22EF9302B811CA700C8674F /* AppDelegate.swift */,
 				E22EF9322B811CA700C8674F /* SceneDelegate.swift */,
 				E22EF9342B811CA700C8674F /* ViewController.swift */,
@@ -166,6 +173,23 @@
 				E22EF9532B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift */,
 			);
 			path = MushroomSpotUITests;
+			sourceTree = "<group>";
+		};
+		E2F67AE32B82423F0087CD7D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */,
+				E2F67AE92B8243770087CD7D /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		E2F67AEB2B82440D0087CD7D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E22EF93D2B811CA700C8674F /* LaunchScreen.storyboard in Resources */,
+				E2F67AE82B8243520087CD7D /* SplashViewController.storyboard in Resources */,
 				E22EF93A2B811CA700C8674F /* Assets.xcassets in Resources */,
 				E22EF9382B811CA700C8674F /* Main.storyboard in Resources */,
 			);
@@ -371,9 +396,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */,
 				E22EF9352B811CA700C8674F /* ViewController.swift in Sources */,
 				E22EF9312B811CA700C8674F /* AppDelegate.swift in Sources */,
 				E22EF9332B811CA700C8674F /* SceneDelegate.swift in Sources */,
+				E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
