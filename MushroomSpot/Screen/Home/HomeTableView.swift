@@ -7,19 +7,24 @@
 
 import UIKit
 
+/** Table view representing a list of mushrooms content on home screen. */
 class HomeTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
 
     override init(frame: CGRect, style: UITableView.Style) { super.init(frame: frame, style: style); initialize() }
 
     required init?(coder: NSCoder) { super.init(coder: coder); initialize() }
-        
+    
+    /** Identifier used for item cell. */
     let itemCellIdentifier = "HomeTableCellItemView"
     
+    /** Callback closure for tapping on item cell. */
     var onTap: ((MushroomEntity) -> Void)? = nil
     
+    /** List of mushroom entity values. */
     var values: [MushroomEntity] = []
     
-    func initialize() {
+    /** Initialization method for applying delegate, data source and registering item cell view. */
+    private func initialize() {
         delegate = self
         dataSource = self
         register(UINib(nibName: itemCellIdentifier, bundle: nil), forCellReuseIdentifier: itemCellIdentifier)
@@ -42,24 +47,9 @@ class HomeTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    /** Returns dequeued item cell view for given table view and index path.*/
     private func dequeueItemCell(tableView: UITableView, for indexPath: IndexPath) -> HomeTableCellItemView? {
         return tableView.dequeueReusableCell(withIdentifier: itemCellIdentifier, for: indexPath) as? HomeTableCellItemView
     }
 
-}
-
-class MushroomEntity: NSObject {
-    
-    let id: String?
-    let name: String?
-    let latinName: String?
-    let profilePicture: UIImage?
-    
-    init(id: String?, name: String?, latinName: String?, profilePicture: UIImage?) {
-        self.id = id
-        self.name = name
-        self.latinName = latinName
-        self.profilePicture = profilePicture
-    }
-    
 }
