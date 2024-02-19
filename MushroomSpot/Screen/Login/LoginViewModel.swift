@@ -12,6 +12,7 @@ import Alamofire
 /** View model for login screen. */
 class LoginViewModel: NSObject {
     
+    /** Instance of API repository. */
     var apiRepository: ApiRepository { (UIApplication.shared.delegate as! AppDelegate).apiRepository }
     
     /** Callback closure for login submission. */
@@ -53,14 +54,14 @@ class LoginViewModel: NSObject {
         // since it's possible that user's password stored
         // on backend doesn't match these conditions.
         let regex = "^" // Anchor start
-            + "(?=.*[0-9])" // Contains at least one number.
-            + "(?=.*[a-z])" // Contains at least one lowercase letter.
-            + "(?=.*[A-Z])" // Contains at least one uppercase letter.
-            + "(?=.*[^A-Za-z0-9])" // Contains at least one special character (any non-alphanumeric)
-            + ".{8,}" // Must have at least 8 chracters or more.
+        + "(?=.*[0-9])" // Contains at least one number.
+        + "(?=.*[a-z])" // Contains at least one lowercase letter.
+        + "(?=.*[A-Z])" // Contains at least one uppercase letter.
+        + "(?=.*[^A-Za-z0-9])" // Contains at least one special character (any non-alphanumeric)
+        + ".{8,}" // Must have at least 8 chracters or more.
         + "$" // Anchor end
         let predicate = NSPredicate(format:"SELF MATCHES %@", regex)
         return predicate.evaluate(with: value)
     }
-        
+    
 }

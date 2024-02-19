@@ -62,15 +62,16 @@ class LoginViewController: UIViewController {
     private func onSubmitFailure(reason: LoginSubmitFailureReason) {
         switch reason {
         case .invalidField(let fields):
-            
-            let emailReminder = "\n" + "\n" + String(localized: "login_submit_action_failure_message_invalid_field_email_hint")
-            let passwordReminder = "\n" + "\n" + String(localized: "login_submit_action_failure_message_invalid_field_password_hint")
+            // Hints provide info to user to see what should be done before submitting.
+            let emailHint = "\n" + "\n" + String(localized: "login_submit_action_failure_message_invalid_field_email_hint")
+            let passwordHint = "\n" + "\n" + String(localized: "login_submit_action_failure_message_invalid_field_password_hint")
+            // Based on invalid fields, pick specific message to be displayed. Empty array for invalid fields should not occur in here.
             let message = if (fields.contains(.email) && fields.contains(.password)) {
-                String(localized: "login_submit_action_failure_message_invalid_field_email_and_password") + emailReminder + passwordReminder
+                String(localized: "login_submit_action_failure_message_invalid_field_email_and_password") + emailHint + passwordHint
             } else if (fields.contains(.email) && !fields.contains(.password)) {
-                String(localized: "login_submit_action_failure_message_invalid_field_email") + emailReminder
+                String(localized: "login_submit_action_failure_message_invalid_field_email") + emailHint
             } else if (!fields.contains(.email) && fields.contains(.password)) {
-                String(localized: "login_submit_action_failure_message_invalid_field_password") + passwordReminder
+                String(localized: "login_submit_action_failure_message_invalid_field_password") + passwordHint
             } else {
                 fatalError("Failure reason is invalid field, but there are no invalid fields provided in array.")
             }
