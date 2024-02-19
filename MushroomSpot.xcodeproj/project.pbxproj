@@ -191,17 +191,13 @@
 		E22EF92F2B811CA700C8674F /* MushroomSpot */ = {
 			isa = PBXGroup;
 			children = (
-				E2B8B27C2B83C4E20045B247 /* Profile */,
-				E2E719EA2B83A7A900CB6665 /* Details */,
-				E24868632B838A880086D4E1 /* Home */,
-				E2F67AEE2B824C240087CD7D /* Login */,
 				E2F67AEB2B82440D0087CD7D /* Extension */,
-				E2F67AE32B82423F0087CD7D /* Splash */,
+				E2D3CD492B83D162004999CA /* Screen */,
 				E22EF9302B811CA700C8674F /* AppDelegate.swift */,
 				E22EF9322B811CA700C8674F /* SceneDelegate.swift */,
 				E22EF9392B811CA700C8674F /* Assets.xcassets */,
-				E22EF93B2B811CA700C8674F /* LaunchScreen.storyboard */,
 				E22EF93E2B811CA700C8674F /* Info.plist */,
+				E22EF93B2B811CA700C8674F /* LaunchScreen.storyboard */,
 				E2F67AF62B8253BE0087CD7D /* Main.storyboard */,
 			);
 			path = MushroomSpot;
@@ -227,13 +223,13 @@
 		E24868632B838A880086D4E1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E2E946422B838AF700E5F68E /* HomeViewController.swift */,
+				E2E9464E2B839C6500E5F68E /* HomeLoadResult.swift */,
+				E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */,
+				E2E946462B838DA000E5F68E /* HomeTableCellItemView.xib */,
 				E2E9464A2B83905A00E5F68E /* HomeTableView.swift */,
 				E2E946442B838B0000E5F68E /* HomeViewController.storyboard */,
-				E2E946462B838DA000E5F68E /* HomeTableCellItemView.xib */,
-				E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */,
+				E2E946422B838AF700E5F68E /* HomeViewController.swift */,
 				E2E9464C2B839AF700E5F68E /* HomeViewModel.swift */,
-				E2E9464E2B839C6500E5F68E /* HomeLoadResult.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -241,23 +237,35 @@
 		E2B8B27C2B83C4E20045B247 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				E2B8B27D2B83C4EF0045B247 /* ProfileViewController.swift */,
-				E2B8B27F2B83C50D0045B247 /* ProfileViewController.storyboard */,
-				E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */,
-				E2B8B2832B83C6EE0045B247 /* ProfileLoadResult.swift */,
 				E2B8B2852B83C7010045B247 /* ProfileEntity.swift */,
+				E2B8B2832B83C6EE0045B247 /* ProfileLoadResult.swift */,
+				E2B8B27F2B83C50D0045B247 /* ProfileViewController.storyboard */,
+				E2B8B27D2B83C4EF0045B247 /* ProfileViewController.swift */,
+				E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		E2D3CD492B83D162004999CA /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E2E719EA2B83A7A900CB6665 /* Details */,
+				E24868632B838A880086D4E1 /* Home */,
+				E2F67AEE2B824C240087CD7D /* Login */,
+				E2B8B27C2B83C4E20045B247 /* Profile */,
+				E2F67AE32B82423F0087CD7D /* Splash */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		E2E719EA2B83A7A900CB6665 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */,
-				E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */,
 				E2E719EF2B83AE3700CB6665 /* DetailsTableCellItemView.swift */,
 				E2E719F32B83AE5100CB6665 /* DetailsTableCellItemView.xib */,
 				E2E719F52B83AE6200CB6665 /* DetailsTableView.swift */,
+				E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */,
+				E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -274,9 +282,9 @@
 		E2F67AEB2B82440D0087CD7D /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				E24868602B83883D0086D4E1 /* StringExtension.swift */,
 				E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */,
 				E2F67AFB2B825A950087CD7D /* ViewExtension.swift */,
-				E24868602B83883D0086D4E1 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -284,10 +292,10 @@
 		E2F67AEE2B824C240087CD7D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E2F67AEF2B824C340087CD7D /* LoginViewController.swift */,
-				E2F67AF12B824C420087CD7D /* LoginViewController.storyboard */,
-				E2F67AFD2B836BFB0087CD7D /* LoginViewModel.swift */,
 				E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */,
+				E2F67AF12B824C420087CD7D /* LoginViewController.storyboard */,
+				E2F67AEF2B824C340087CD7D /* LoginViewController.swift */,
+				E2F67AFD2B836BFB0087CD7D /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
