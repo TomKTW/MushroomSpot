@@ -15,9 +15,34 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46Y-3c-4dK">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <barButtonItem title="Profile" id="dSf-Fk-ySq"/>
+                                </items>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JrK-fm-fYn" customClass="HomeTableView" customModule="MushroomSpot" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JrK-fm-fYn" secondAttribute="trailing" id="5b8-tn-hrg"/>
+                            <constraint firstItem="JrK-fm-fYn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DMH-Ah-w9s"/>
+                            <constraint firstAttribute="trailing" secondItem="46Y-3c-4dK" secondAttribute="trailing" id="KhO-Mk-Yqt"/>
+                            <constraint firstItem="JrK-fm-fYn" firstAttribute="top" secondItem="46Y-3c-4dK" secondAttribute="bottom" id="MJW-ZE-Q8f"/>
+                            <constraint firstItem="46Y-3c-4dK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="N3l-Vi-lWI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JrK-fm-fYn" secondAttribute="bottom" id="WOA-VL-7ZJ"/>
+                            <constraint firstItem="46Y-3c-4dK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="XsL-qy-XyB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentTable" destination="JrK-fm-fYn" id="eE4-kr-9cX"/>
+                        <outlet property="headerToolbar" destination="46Y-3c-4dK" id="V7V-s0-jFW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

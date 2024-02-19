@@ -21,6 +21,9 @@
 		E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24868602B83883D0086D4E1 /* StringExtension.swift */; };
 		E2E946432B838AF700E5F68E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E946422B838AF700E5F68E /* HomeViewController.swift */; };
 		E2E946452B838B0000E5F68E /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E946442B838B0000E5F68E /* HomeViewController.storyboard */; };
+		E2E946472B838DA000E5F68E /* HomeTableCellItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E946462B838DA000E5F68E /* HomeTableCellItemView.xib */; };
+		E2E946492B838E4600E5F68E /* HomeTableCellItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */; };
+		E2E9464B2B83905A00E5F68E /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9464A2B83905A00E5F68E /* HomeTableView.swift */; };
 		E2F67AE82B8243520087CD7D /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */; };
 		E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AE92B8243770087CD7D /* SplashViewController.swift */; };
 		E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */; };
@@ -73,6 +76,9 @@
 		E24868602B83883D0086D4E1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E2E946422B838AF700E5F68E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E2E946442B838B0000E5F68E /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		E2E946462B838DA000E5F68E /* HomeTableCellItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableCellItemView.xib; sourceTree = "<group>"; };
+		E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCellItemView.swift; sourceTree = "<group>"; };
+		E2E9464A2B83905A00E5F68E /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 		E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
 		E2F67AE92B8243770087CD7D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -196,7 +202,10 @@
 			isa = PBXGroup;
 			children = (
 				E2E946422B838AF700E5F68E /* HomeViewController.swift */,
+				E2E9464A2B83905A00E5F68E /* HomeTableView.swift */,
 				E2E946442B838B0000E5F68E /* HomeViewController.storyboard */,
+				E2E946462B838DA000E5F68E /* HomeTableCellItemView.xib */,
+				E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E946472B838DA000E5F68E /* HomeTableCellItemView.xib in Resources */,
 				E22EF93D2B811CA700C8674F /* LaunchScreen.storyboard in Resources */,
 				E2F67AE82B8243520087CD7D /* SplashViewController.storyboard in Resources */,
 				E2E946452B838B0000E5F68E /* HomeViewController.storyboard in Resources */,
@@ -449,9 +459,11 @@
 				E22EF9312B811CA700C8674F /* AppDelegate.swift in Sources */,
 				E22EF9332B811CA700C8674F /* SceneDelegate.swift in Sources */,
 				E2E946432B838AF700E5F68E /* HomeViewController.swift in Sources */,
+				E2E9464B2B83905A00E5F68E /* HomeTableView.swift in Sources */,
 				E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */,
 				E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */,
 				E2F67B002B836C1E0087CD7D /* LoginSubmitResult.swift in Sources */,
+				E2E946492B838E4600E5F68E /* HomeTableCellItemView.swift in Sources */,
 				E2F67AFE2B836BFB0087CD7D /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
