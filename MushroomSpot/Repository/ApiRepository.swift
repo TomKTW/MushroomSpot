@@ -8,10 +8,13 @@
 import Foundation
 import Alamofire
 
+/** Repository for providing API requests. */
 class ApiRepository {
     
+    /** Base for API URL path. */
     let baseUrl = "https://demo5845085.mockable.io/"
     
+    /** Submits login data to backend for authorization to get authorization token and provides result on callback. */
     func submitLogin(email: String, password: String, callback: @escaping (LoginSubmitResult) -> ()) {
         AF.request(baseUrl + "api/v1/users/login", method: .post, parameters: [
             "email":email,
@@ -25,13 +28,13 @@ class ApiRepository {
                 } else {
                     .failure(reason: .network)
                 }
-            case .failure(_):
-                    .failure(reason: .network)
+            case .failure(_): .failure(reason: .network)
             }
             DispatchQueue.main.async { callback(result) }
         }
     }
     
+    /** Fetches a list of mushroom from backend and provides the result on callback. */
     func fetchMushrooms(callback: @escaping (MushroomFetchResult) -> ()) {
         AF.request(baseUrl + "api/v1/mushrooms", method: .get).responseString { response in
             let result: MushroomFetchResult = switch (response.result) {
@@ -49,13 +52,13 @@ class ApiRepository {
                 } else {
                     .failure
                 }
-            case .failure(_):
-                    .failure
+            case .failure(_): .failure
             }
             DispatchQueue.main.async { callback(result) }
-        }        
+        }
     }
     
+    /** Fetches profile information about user from backend and provides the result on callback. */
     func fetchProfile(callback: @escaping (ProfileFetchResult) -> ()) {
         AF.request(baseUrl + "/users/me", method: .get).responseString { response in
             let result: ProfileFetchResult = switch (response.result) {

@@ -7,7 +7,10 @@
 
 import Foundation
 
+/** Enumeration of results for fetching mushroom list. */
 enum MushroomFetchResult {
+    /** Fetching data has been successful. */
     case success(items: [MushroomEntity])
+    /** Fetching data has been unsuccessful. */
     case failure
 }

@@ -7,7 +7,10 @@
 
 import Foundation
 
+/** Enumeration of results for fetching profile data. */
 enum ProfileFetchResult {
+    /** Fetching data has been successful. */
     case success(item: ProfileEntity)
+    /** Fetching data has been unsuccessful. */
     case failure
 }

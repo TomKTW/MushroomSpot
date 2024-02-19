@@ -12,10 +12,13 @@ class ProfileEntity: NSObject {
     
     /** Identiffication value, represetented as number in string.*/
     let id: String?
+    
     /** User name, represented and treated as e-mail address. */
     let username: String?
+    
     /** User's first name. */
     let firstName: String?
+    
     /** Users last name. */
     let lastName: String?
     
