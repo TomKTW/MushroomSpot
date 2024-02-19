@@ -130,6 +130,7 @@
 		E2FDB6402B8403A1009C0AEF /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		E2FDB6432B840DE2009C0AEF /* SettingRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRepositoryTest.swift; sourceTree = "<group>"; };
 		E2FDB6452B840EE0009C0AEF /* ApiRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepositoryTest.swift; sourceTree = "<group>"; };
+		E2FDB6472B8417A7009C0AEF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +221,7 @@
 				E22EF93B2B811CA700C8674F /* LaunchScreen.storyboard */,
 				E2F67AF62B8253BE0087CD7D /* Main.storyboard */,
 				E2D3CD502B83D726004999CA /* Localizable.xcstrings */,
+				E2FDB6472B8417A7009C0AEF /* README.md */,
 			);
 			path = MushroomSpot;
 			sourceTree = "<group>";
