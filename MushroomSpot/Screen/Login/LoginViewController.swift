@@ -32,6 +32,9 @@ class LoginViewController: UIViewController {
         emailInput.text = "john.doe@example.com"
         passwordInput.text = "Test123!"
         #endif
+        // Localize text strings.
+        emailInput.placeholder = String(localized: "login_email_input_title")
+        passwordInput.placeholder = String(localized: "login_password_input_title")
         // On submit button tap, set loading state and submit the data.
         submitButton.setOnTap(to: self) { this in
             this.setSubmitRequestInProgress(enabled: true)
@@ -59,20 +62,21 @@ class LoginViewController: UIViewController {
     private func onSubmitFailure(reason: LoginSubmitFailureReason) {
         switch reason {
         case .invalidField(let fields):
-            let emailReminder = "\n" + "\n" + "Please check if your e-mail address is entered correctly."
-            let passwordReminder = "\n" + "\n" + "Password must have at least 8 characters and at least one of each: number, lowercase letter, uppercase letter and special character"
+            
+            let emailReminder = "\n" + "\n" + String(localized: "login_submit_action_failure_message_invalid_field_email_hint")
+            let passwordReminder = "\n" + "\n" + String(localized: "login_submit_action_failure_message_invalid_field_password_hint")
             let message = if (fields.contains(.email) && fields.contains(.password)) {
-                "E-mail address and password are invalid." + emailReminder + passwordReminder
+                String(localized: "login_submit_action_failure_message_invalid_field_email_and_password") + emailReminder + passwordReminder
             } else if (fields.contains(.email) && !fields.contains(.password)) {
-                "E-mail address is invalid." + emailReminder
+                String(localized: "login_submit_action_failure_message_invalid_field_email") + emailReminder
             } else if (!fields.contains(.email) && fields.contains(.password)) {
-                "Password is invalid." + passwordReminder
+                String(localized: "login_submit_action_failure_message_invalid_field_password") + passwordReminder
             } else {
                 fatalError("Failure reason is invalid field, but there are no invalid fields provided in array.")
             }
             showErrorDialog(message: message)
         case .network:
-            showErrorDialog(message: "Your request could not be processed. Please try again later.")
+            showErrorDialog(message: String(localized: "login_submit_action_failure_message_network"))
         }
     }
     
@@ -83,8 +87,8 @@ class LoginViewController: UIViewController {
     
     /** Displays an error message. */
     private func showErrorDialog(message: String) {
-        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        let alert = UIAlertController(title: String(localized: "login_submit_action_failure_title"), message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: String(localized: "login_submit_action_failure_dismiss_action"), style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
     

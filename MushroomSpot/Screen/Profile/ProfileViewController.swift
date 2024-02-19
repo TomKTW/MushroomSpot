@@ -19,6 +19,8 @@ class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleNameLabel.text = String(localized: "profile_name_title")
+        titleEmailLabel.text = String(localized: "profile_email_title")
         viewModel.onLoad = { [weak self] (result) in guard let this = self else { return }
             switch result {
             case .success(let item):

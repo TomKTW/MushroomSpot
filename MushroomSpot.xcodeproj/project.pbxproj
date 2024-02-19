@@ -26,6 +26,7 @@
 		E2B8B2862B83C7010045B247 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2852B83C7010045B247 /* ProfileEntity.swift */; };
 		E2D3CD4B2B83D58B004999CA /* LoginSubmitFailureReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */; };
 		E2D3CD4D2B83D5A2004999CA /* LoginSubmitInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */; };
+		E2D3CD512B83D726004999CA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E2D3CD502B83D726004999CA /* Localizable.xcstrings */; };
 		E2E719EC2B83A7B300CB6665 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */; };
 		E2E719EE2B83A7BC00CB6665 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */; };
 		E2E719F02B83AE3700CB6665 /* DetailsTableCellItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E719EF2B83AE3700CB6665 /* DetailsTableCellItemView.swift */; };
@@ -95,6 +96,7 @@
 		E2B8B2852B83C7010045B247 /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
 		E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitFailureReason.swift; sourceTree = "<group>"; };
 		E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitInputFields.swift; sourceTree = "<group>"; };
+		E2D3CD502B83D726004999CA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 		E2E719EF2B83AE3700CB6665 /* DetailsTableCellItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableCellItemView.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				E22EF93E2B811CA700C8674F /* Info.plist */,
 				E22EF93B2B811CA700C8674F /* LaunchScreen.storyboard */,
 				E2F67AF62B8253BE0087CD7D /* Main.storyboard */,
+				E2D3CD502B83D726004999CA /* Localizable.xcstrings */,
 			);
 			path = MushroomSpot;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				E22EF93D2B811CA700C8674F /* LaunchScreen.storyboard in Resources */,
 				E2F67AE82B8243520087CD7D /* SplashViewController.storyboard in Resources */,
 				E2E946452B838B0000E5F68E /* HomeViewController.storyboard in Resources */,
+				E2D3CD512B83D726004999CA /* Localizable.xcstrings in Resources */,
 				E2E719F42B83AE5100CB6665 /* DetailsTableCellItemView.xib in Resources */,
 				E2F67AF82B8253BE0087CD7D /* Main.storyboard in Resources */,
 				E2F67AF22B824C420087CD7D /* LoginViewController.storyboard in Resources */,
