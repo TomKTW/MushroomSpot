@@ -46,9 +46,6 @@ class LoginViewController: UIViewController {
     
     /** Invokes event when authorization has been successful. */
     func onSubmitSuccess(authToken: String) {
-        let alert = UIAlertController(title: "Success", message: authToken, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
         navigateToHome()
     }
     
@@ -75,8 +72,7 @@ class LoginViewController: UIViewController {
     
     /** Navigates to home screen. */
     func navigateToHome() {
-        // TODO: Prepare home screen.
-        // navigationPushViewController(createViewController(of: HomeViewController.self))
+        navigationPushViewController(createViewController(of: HomeViewController.self))
     }
     
     /** Displays an error message. */
