@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
     
     @IBAction func onProfileButtonTap(_ sender: Any) {
         if let controller = createViewController(of: ProfileViewController.self) {
-            controller.sheetPresentationController?.detents = [.custom { _ in 160 }]
+            controller.sheetPresentationController?.detents = [.custom { _ in 200 }]
             present(controller, animated: true)
         }
     }
