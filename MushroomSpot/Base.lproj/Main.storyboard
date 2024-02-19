@@ -9,10 +9,11 @@
         <!--Navigation Controller-->
         <scene sceneID="P2G-3w-RTv">
             <objects>
-                <navigationController navigationBarHidden="YES" id="TgY-PV-o5e" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
+                <navigationController id="TgY-PV-o5e" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nwo-8K-am9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

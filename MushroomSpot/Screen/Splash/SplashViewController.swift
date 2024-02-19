@@ -9,9 +9,9 @@ import UIKit
 
 /** Screen used on app launch to perform initial logic for navigating the user to proper screen. */
 class SplashViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         load()
     }
     

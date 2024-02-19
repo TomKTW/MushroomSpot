@@ -10,9 +10,6 @@ import UIKit
 /** Screen for home page containing a list of mushrooms and actions to reach other pages. */
 class HomeViewController: UIViewController {
     
-    /** Toolbar with actions on header. */
-    @IBOutlet weak var headerToolbar: UIToolbar!
-    
     /** Table containing mushroom list content. */
     @IBOutlet weak var contentTable: HomeTableView!
     
@@ -21,6 +18,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setup navigation bar layout.
+        updateNavigationLayout()
         // On item tap, go to details screen with data of this item.
         contentTable.onTap = { [weak self] (item) in guard let this = self else { return }
             this.navigateToDetails(item: item)
@@ -39,6 +38,23 @@ class HomeViewController: UIViewController {
         viewModel.load()
     }
     
+    /** Updates navigation bar to include title and buttons for profile and logout. */
+    func updateNavigationLayout() {
+        title = String(localized: "home_title")
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(
+            title: String(localized: "home_logout_button_action"),
+            style: .plain,
+            target: self,
+            action: #selector(self.onLogoutButtonTap(sender:))
+        )
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(
+            title: String(localized: "home_profile_button_action"),
+            style: .plain,
+            target: self,
+            action: #selector(self.onProfileButtonTap(sender:))
+        )
+    }
+    
     /** Navigates to details screen with provided item. */
     func navigateToDetails(item: MushroomEntity) {
         let controller = createViewController(of: DetailsViewController.self)
@@ -46,11 +62,17 @@ class HomeViewController: UIViewController {
         navigationPushViewController(controller)
     }
     
+    /** Event for clicking on logout button. This will log them out and navigate back to login screen. */
+    @objc func onLogoutButtonTap(sender: Any) {
+        navigationPopViewController()
+    }
+    
     /** Event for clicking on profile button. This will display profile screen modally. */
-    @IBAction func onProfileButtonTap(_ sender: Any) {
+    @objc func onProfileButtonTap(sender: Any) {
         if let controller = createViewController(of: ProfileViewController.self) {
             controller.sheetPresentationController?.detents = [.custom { _ in 200 }]
             present(controller, animated: true)
         }
     }
+    
 }

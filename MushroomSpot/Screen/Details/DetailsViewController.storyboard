@@ -16,18 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imn-sl-DYf">
-                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                                <items>
-                                    <barButtonItem title="Back" id="Nd8-1W-Yf5">
-                                        <connections>
-                                            <action selector="onBackButtonTap:" destination="Y6W-OH-hqX" id="e5J-tV-5Jl"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YLV-kX-XuT" customClass="DetailsTableView" customModule="MushroomSpot" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YLV-kX-XuT" customClass="DetailsTableView" customModule="MushroomSpot" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -35,17 +25,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YLV-kX-XuT" secondAttribute="trailing" id="7cB-B6-ayd"/>
-                            <constraint firstItem="Imn-sl-DYf" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="D8O-MU-9Zd"/>
                             <constraint firstItem="YLV-kX-XuT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Q8n-39-LNB"/>
-                            <constraint firstItem="Imn-sl-DYf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="SbA-rJ-Tli"/>
-                            <constraint firstItem="YLV-kX-XuT" firstAttribute="top" secondItem="Imn-sl-DYf" secondAttribute="bottom" id="j5H-rB-GI6"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Imn-sl-DYf" secondAttribute="trailing" id="kag-bD-uUf"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YLV-kX-XuT" secondAttribute="bottom" id="qva-yv-enc"/>
+                            <constraint firstItem="YLV-kX-XuT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="xsa-0Y-0A7"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="contentTable" destination="YLV-kX-XuT" id="Gb1-ss-BKs"/>
-                        <outlet property="headerToolbar" destination="Imn-sl-DYf" id="3NQ-p5-kUu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

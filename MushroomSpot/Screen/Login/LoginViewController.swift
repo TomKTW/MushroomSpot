@@ -51,6 +51,8 @@ class LoginViewController: UIViewController {
             }
             this.setSubmitRequestInProgress(enabled: false)
         }
+        
+        navigationItem.hidesBackButton = true
     }
     
     /** Invokes event when authorization has been successful. */

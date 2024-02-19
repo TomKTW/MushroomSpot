@@ -10,9 +10,6 @@ import UIKit
 /** Screen for details of provided mushroom item. */
 class DetailsViewController: UIViewController {
     
-    /** Toolbar with actions on header. */
-    @IBOutlet weak var headerToolbar: UIToolbar!
-    
     /** Table containing mushroom item content. */
     @IBOutlet weak var contentTable: DetailsTableView!
 
@@ -21,9 +18,16 @@ class DetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Setup navigation bar layout.
+        updateNavigationLayout()
         // Apply item to table and reload it.
         contentTable.item = item
         contentTable.reloadData()
+    }
+    
+    /** Updates navigation bar to include title. */
+    func updateNavigationLayout() {
+        title = String(localized: "details_title")
     }
     
     /** Event for clicking on back button. This will navigate back to previous screen. */
