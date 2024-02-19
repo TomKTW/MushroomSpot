@@ -26,6 +26,7 @@ extension String {
         return nil
     }
     
+    /** Returns UIImage from Base64 data URL. If the string doesn't represent such URL, nil is returned instead. */
     func toBase64UrlImageAsUIImage() -> UIImage? {
         if let url = URL(string: self) {
             do {
