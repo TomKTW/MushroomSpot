@@ -27,4 +27,5 @@ class DetailsViewController: UIViewController {
     func navigateBack() {
         navigationPopViewController()
     }
+    
 }

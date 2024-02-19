@@ -37,4 +37,10 @@ class HomeViewController: UIViewController {
         navigationPushViewController(controller)
     }
     
+    @IBAction func onProfileButtonTap(_ sender: Any) {
+        if let controller = createViewController(of: ProfileViewController.self) {
+            controller.sheetPresentationController?.detents = [.custom { _ in 160 }]
+            present(controller, animated: true)
+        }
+    }
 }

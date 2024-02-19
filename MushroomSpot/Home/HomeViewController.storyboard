@@ -19,9 +19,12 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46Y-3c-4dK">
                                 <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                                 <items>
-                                    <barButtonItem title="Back" id="QcP-fC-x4c"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="aFx-hb-88L"/>
-                                    <barButtonItem title="Profile" id="dSf-Fk-ySq"/>
+                                    <barButtonItem title="Profile" id="dSf-Fk-ySq">
+                                        <connections>
+                                            <action selector="onProfileButtonTap:" destination="Y6W-OH-hqX" id="BHP-Dy-x2V"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JrK-fm-fYn" customClass="HomeTableView" customModule="MushroomSpot" customModuleProvider="target">
