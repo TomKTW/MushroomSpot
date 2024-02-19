@@ -19,6 +19,9 @@ class LoginViewController: UIViewController {
     /** Button for submitting data from provided fields. */
     @IBOutlet weak var submitButton: UIButton!
     
+    /** Progress for submitting data from provided fields. */
+    @IBOutlet weak var submitProgress: UIActivityIndicatorView!
+    
     /** View model for this screen. */
     private let viewModel = LoginViewModel()
     
@@ -29,28 +32,31 @@ class LoginViewController: UIViewController {
         emailInput.text = "john.doe@example.com"
         passwordInput.text = "Test123!"
         #endif
-        // On submit button tap, submit the data.
-        submitButton.setOnTap(to: self) { this in this.viewModel.submit(
-            email: this.emailInput.text.orEmpty(),
-            password: this.passwordInput.text.orEmpty()
-        )}
-        // When results are received for submitting data, go to specific event for it.
-        viewModel.onSubmit = { [weak self] (result) in
-            guard let this = self else { return }
+        // On submit button tap, set loading state and submit the data.
+        submitButton.setOnTap(to: self) { this in
+            this.setSubmitRequestInProgress(enabled: true)
+            this.viewModel.submit(
+                email: this.emailInput.text.orEmpty(),
+                password: this.passwordInput.text.orEmpty()
+            )
+        }
+        // When results are received for submitting data, go to specific event for it and finish loading state.
+        viewModel.onSubmit = { [weak self] (result) in guard let this = self else { return }
             switch result {
             case .success(let authToken): this.onSubmitSuccess(authToken: authToken)
             case .failure(let reason): this.onSubmitFailure(reason: reason)
             }
+            this.setSubmitRequestInProgress(enabled: false)
         }
     }
     
     /** Invokes event when authorization has been successful. */
-    func onSubmitSuccess(authToken: String) {
+    private func onSubmitSuccess(authToken: String) {
         navigateToHome()
     }
     
     /** Invokes event when authorization has been unsuccessful. */
-    func onSubmitFailure(reason: LoginSubmitFailureReason) {
+    private func onSubmitFailure(reason: LoginSubmitFailureReason) {
         switch reason {
         case .invalidField(let fields):
             let emailReminder = "\n" + "\n" + "Please check if your e-mail address is entered correctly."
@@ -71,15 +77,23 @@ class LoginViewController: UIViewController {
     }
     
     /** Navigates to home screen. */
-    func navigateToHome() {
+    private func navigateToHome() {
         navigationPushViewController(createViewController(of: HomeViewController.self))
     }
     
     /** Displays an error message. */
-    func showErrorDialog(message: String) {
+    private func showErrorDialog(message: String) {
         let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
+    }
+    
+    /** Sets content to loading state where interaction is disabled if set to true. Otherwise, loading state is stopped and interaction is enabled. */
+    private func setSubmitRequestInProgress(enabled: Bool) {
+        emailInput.isEnabled = !enabled
+        passwordInput.isEnabled = !enabled
+        submitButton.isUserInteractionEnabled = !enabled
+        if (enabled) { submitProgress.startAnimating() } else { submitProgress.stopAnimating() }
     }
     
 }

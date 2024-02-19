@@ -20,9 +20,9 @@ class LoginViewModel: NSObject {
         let isEmailValid = validateEmail(value: email)
         let isPasswordValid = validatePassword(value: password)
         // Make an array of all fields that are invalid.
-        let invalidFields = [
-            !isEmailValid ? LoginSubmitFields.email : nil,
-            !isPasswordValid ? LoginSubmitFields.password : nil
+        let invalidFields: [LoginSubmitInputFields] = [
+            !isEmailValid ? .email : nil,
+            !isPasswordValid ? .password : nil
         ].compactMap { $0 }
         // If there are no invalid fields, proceed with submitting data. Otherwise, respond with failed result.
         if (invalidFields.isEmpty) {

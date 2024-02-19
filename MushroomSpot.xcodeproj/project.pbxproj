@@ -24,6 +24,8 @@
 		E2B8B2822B83C6CD0045B247 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */; };
 		E2B8B2842B83C6EE0045B247 /* ProfileLoadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2832B83C6EE0045B247 /* ProfileLoadResult.swift */; };
 		E2B8B2862B83C7010045B247 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2852B83C7010045B247 /* ProfileEntity.swift */; };
+		E2D3CD4B2B83D58B004999CA /* LoginSubmitFailureReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */; };
+		E2D3CD4D2B83D5A2004999CA /* LoginSubmitInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */; };
 		E2E719EC2B83A7B300CB6665 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */; };
 		E2E719EE2B83A7BC00CB6665 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */; };
 		E2E719F02B83AE3700CB6665 /* DetailsTableCellItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E719EF2B83AE3700CB6665 /* DetailsTableCellItemView.swift */; };
@@ -91,6 +93,8 @@
 		E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		E2B8B2832B83C6EE0045B247 /* ProfileLoadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadResult.swift; sourceTree = "<group>"; };
 		E2B8B2852B83C7010045B247 /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
+		E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitFailureReason.swift; sourceTree = "<group>"; };
+		E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitInputFields.swift; sourceTree = "<group>"; };
 		E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 		E2E719EF2B83AE3700CB6665 /* DetailsTableCellItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableCellItemView.swift; sourceTree = "<group>"; };
@@ -292,6 +296,8 @@
 		E2F67AEE2B824C240087CD7D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */,
+				E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */,
 				E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */,
 				E2F67AF12B824C420087CD7D /* LoginViewController.storyboard */,
 				E2F67AEF2B824C340087CD7D /* LoginViewController.swift */,
@@ -520,6 +526,7 @@
 				E2B8B2822B83C6CD0045B247 /* ProfileViewModel.swift in Sources */,
 				E2E719F02B83AE3700CB6665 /* DetailsTableCellItemView.swift in Sources */,
 				E2F67AF02B824C340087CD7D /* LoginViewController.swift in Sources */,
+				E2D3CD4D2B83D5A2004999CA /* LoginSubmitInputFields.swift in Sources */,
 				E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */,
 				E2B8B2862B83C7010045B247 /* ProfileEntity.swift in Sources */,
 				E22EF9312B811CA700C8674F /* AppDelegate.swift in Sources */,
@@ -529,6 +536,7 @@
 				E2E9464B2B83905A00E5F68E /* HomeTableView.swift in Sources */,
 				E2E9464F2B839C6500E5F68E /* HomeLoadResult.swift in Sources */,
 				E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */,
+				E2D3CD4B2B83D58B004999CA /* LoginSubmitFailureReason.swift in Sources */,
 				E2E719F62B83AE6200CB6665 /* DetailsTableView.swift in Sources */,
 				E2E9464D2B839AF700E5F68E /* HomeViewModel.swift in Sources */,
 				E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */,

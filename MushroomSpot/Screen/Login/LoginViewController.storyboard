@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="soI-18-nTB">
-                                <rect key="frame" x="24" y="351" width="345" height="150.33333333333337"/>
+                                <rect key="frame" x="24" y="329" width="345" height="194.33333333333337"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OMN-PB-cAa">
                                         <rect key="frame" x="0.0" y="0.0" width="345" height="34"/>
@@ -34,6 +34,21 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7PM-Uw-k5F">
+                                        <rect key="frame" x="0.0" y="174.33333333333331" width="345" height="20"/>
+                                        <subviews>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="TVP-aM-5qm">
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="20"/>
+                                            </activityIndicatorView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="TVP-aM-5qm" secondAttribute="bottom" id="3lW-Lh-vec"/>
+                                            <constraint firstItem="TVP-aM-5qm" firstAttribute="top" secondItem="7PM-Uw-k5F" secondAttribute="top" id="EhC-TJ-6Ht"/>
+                                            <constraint firstAttribute="trailing" secondItem="TVP-aM-5qm" secondAttribute="trailing" id="XGc-Bx-Kbb"/>
+                                            <constraint firstItem="TVP-aM-5qm" firstAttribute="leading" secondItem="7PM-Uw-k5F" secondAttribute="leading" id="bng-bY-Xuj"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -49,6 +64,7 @@
                         <outlet property="emailInput" destination="OMN-PB-cAa" id="55t-dQ-93t"/>
                         <outlet property="passwordInput" destination="tra-qe-dv0" id="WWy-ww-oWj"/>
                         <outlet property="submitButton" destination="DhU-9E-blI" id="CyO-y1-HxX"/>
+                        <outlet property="submitProgress" destination="TVP-aM-5qm" id="bN7-vv-o61"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
