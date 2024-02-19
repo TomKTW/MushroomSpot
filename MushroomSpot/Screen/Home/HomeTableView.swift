@@ -15,7 +15,7 @@ class HomeTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     required init?(coder: NSCoder) { super.init(coder: coder); initialize() }
     
     /** Identifier used for item cell. */
-    let itemCellIdentifier = "HomeTableCellItemView"
+    private let itemCellIdentifier = "HomeTableCellItemView"
     
     /** Callback closure for tapping on item cell. */
     var onTap: ((MushroomEntity) -> Void)? = nil
@@ -47,7 +47,7 @@ class HomeTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    /** Returns dequeued item cell view for given table view and index path.*/
+    /** Returns dequeued item cell view for given table view and index path. */
     private func dequeueItemCell(tableView: UITableView, for indexPath: IndexPath) -> HomeTableCellItemView? {
         return tableView.dequeueReusableCell(withIdentifier: itemCellIdentifier, for: indexPath) as? HomeTableCellItemView
     }

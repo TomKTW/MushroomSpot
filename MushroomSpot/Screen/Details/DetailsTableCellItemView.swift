@@ -9,10 +9,23 @@ import UIKit
 
 class DetailsTableCellItemView: UITableViewCell {
 
+    /** Layout view of whole content. */
     @IBOutlet weak var contentLayout: UIView!
+    
+    /** Image for icon to be displayed. */
     @IBOutlet weak var iconImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var subtitleLabel: UILabel!
+    
+    /** Label for name title. */
+    @IBOutlet weak var titleNameLabel: UILabel!
+    
+    /** Label for name value. */
+    @IBOutlet weak var valueNameLabel: UILabel!
+    
+    /** Label for latin name title. */
+    @IBOutlet weak var titleLatinNameLabel: UILabel!
+    
+    /** Label for latin name value. */
+    @IBOutlet weak var valueLatinNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

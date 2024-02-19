@@ -18,5 +18,9 @@ class HomeTableCellItemView: UITableViewCell {
     
     /** Label for title to be displayed .*/
     @IBOutlet weak var titleLabel: UILabel!
-
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
 }
