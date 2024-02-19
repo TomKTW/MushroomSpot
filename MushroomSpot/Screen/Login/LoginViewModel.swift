@@ -6,10 +6,13 @@
 //
 
 import Foundation
+import UIKit
 import Alamofire
 
 /** View model for login screen. */
 class LoginViewModel: NSObject {
+    
+    var apiRepository: ApiRepository { (UIApplication.shared.delegate as! AppDelegate).apiRepository }
     
     /** Callback closure for login submission. */
     var onSubmit: ((LoginSubmitResult) -> Void)? = nil
@@ -26,24 +29,8 @@ class LoginViewModel: NSObject {
         ].compactMap { $0 }
         // If there are no invalid fields, proceed with submitting data. Otherwise, respond with failed result.
         if (invalidFields.isEmpty) {
-            AF.request("https://demo5845085.mockable.io/api/v1/users/login", method: .post, parameters: [
-                "email":email,
-                "password":password
-            ]).responseString { response in
-                let result: LoginSubmitResult = switch (response.result) {
-                case .success(let responseString):
-                    if let dictionary = responseString.toJsonObjectAsDictionary(),  let data = dictionary["auth_token"] as? String {
-                        .success(authToken: data)
-                    } else {
-                        .failure(reason: .network)
-                    }
-                case .failure(_):
-                        .failure(reason: .network)
-                }
-                debugPrint("Response: \(response)")
-                DispatchQueue.main.async { [weak self] in guard let this = self else { return }
-                    this.onSubmit?(result)
-                }
+            apiRepository.submitLogin(email: email, password: password) { [weak self] result in guard let this = self else { return }
+                this.onSubmit?(result)
             }
         } else {
             onSubmit?(.failure(reason: .invalidField(fields: invalidFields)))

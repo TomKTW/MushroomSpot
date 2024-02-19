@@ -22,11 +22,12 @@
 		E2B8B27E2B83C4EF0045B247 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B27D2B83C4EF0045B247 /* ProfileViewController.swift */; };
 		E2B8B2802B83C50D0045B247 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B8B27F2B83C50D0045B247 /* ProfileViewController.storyboard */; };
 		E2B8B2822B83C6CD0045B247 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */; };
-		E2B8B2842B83C6EE0045B247 /* ProfileLoadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2832B83C6EE0045B247 /* ProfileLoadResult.swift */; };
+		E2B8B2842B83C6EE0045B247 /* ProfileFetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2832B83C6EE0045B247 /* ProfileFetchResult.swift */; };
 		E2B8B2862B83C7010045B247 /* ProfileEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2852B83C7010045B247 /* ProfileEntity.swift */; };
 		E2D3CD4B2B83D58B004999CA /* LoginSubmitFailureReason.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */; };
 		E2D3CD4D2B83D5A2004999CA /* LoginSubmitInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */; };
 		E2D3CD512B83D726004999CA /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E2D3CD502B83D726004999CA /* Localizable.xcstrings */; };
+		E2D3CD542B83DD6E004999CA /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3CD532B83DD6E004999CA /* ApiRepository.swift */; };
 		E2E719EC2B83A7B300CB6665 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */; };
 		E2E719EE2B83A7BC00CB6665 /* DetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */; };
 		E2E719F02B83AE3700CB6665 /* DetailsTableCellItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E719EF2B83AE3700CB6665 /* DetailsTableCellItemView.swift */; };
@@ -38,7 +39,7 @@
 		E2E946492B838E4600E5F68E /* HomeTableCellItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */; };
 		E2E9464B2B83905A00E5F68E /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9464A2B83905A00E5F68E /* HomeTableView.swift */; };
 		E2E9464D2B839AF700E5F68E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9464C2B839AF700E5F68E /* HomeViewModel.swift */; };
-		E2E9464F2B839C6500E5F68E /* HomeLoadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9464E2B839C6500E5F68E /* HomeLoadResult.swift */; };
+		E2E9464F2B839C6500E5F68E /* MushroomFetchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E9464E2B839C6500E5F68E /* MushroomFetchResult.swift */; };
 		E2F67AE82B8243520087CD7D /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */; };
 		E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AE92B8243770087CD7D /* SplashViewController.swift */; };
 		E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */; };
@@ -92,11 +93,12 @@
 		E2B8B27D2B83C4EF0045B247 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2B8B27F2B83C50D0045B247 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
 		E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		E2B8B2832B83C6EE0045B247 /* ProfileLoadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoadResult.swift; sourceTree = "<group>"; };
+		E2B8B2832B83C6EE0045B247 /* ProfileFetchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFetchResult.swift; sourceTree = "<group>"; };
 		E2B8B2852B83C7010045B247 /* ProfileEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEntity.swift; sourceTree = "<group>"; };
 		E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitFailureReason.swift; sourceTree = "<group>"; };
 		E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitInputFields.swift; sourceTree = "<group>"; };
 		E2D3CD502B83D726004999CA /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		E2D3CD532B83DD6E004999CA /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
 		E2E719EB2B83A7B300CB6665 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E2E719ED2B83A7BC00CB6665 /* DetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsViewController.storyboard; sourceTree = "<group>"; };
 		E2E719EF2B83AE3700CB6665 /* DetailsTableCellItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableCellItemView.swift; sourceTree = "<group>"; };
@@ -108,7 +110,7 @@
 		E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCellItemView.swift; sourceTree = "<group>"; };
 		E2E9464A2B83905A00E5F68E /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 		E2E9464C2B839AF700E5F68E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		E2E9464E2B839C6500E5F68E /* HomeLoadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLoadResult.swift; sourceTree = "<group>"; };
+		E2E9464E2B839C6500E5F68E /* MushroomFetchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomFetchResult.swift; sourceTree = "<group>"; };
 		E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
 		E2F67AE92B8243770087CD7D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 		E22EF92F2B811CA700C8674F /* MushroomSpot */ = {
 			isa = PBXGroup;
 			children = (
+				E2D3CD522B83DD60004999CA /* Repository */,
 				E2F67AEB2B82440D0087CD7D /* Extension */,
 				E2D3CD492B83D162004999CA /* Screen */,
 				E22EF9302B811CA700C8674F /* AppDelegate.swift */,
@@ -230,7 +233,6 @@
 		E24868632B838A880086D4E1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E2E9464E2B839C6500E5F68E /* HomeLoadResult.swift */,
 				E2E946482B838E4600E5F68E /* HomeTableCellItemView.swift */,
 				E2E946462B838DA000E5F68E /* HomeTableCellItemView.xib */,
 				E2E9464A2B83905A00E5F68E /* HomeTableView.swift */,
@@ -245,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				E2B8B2852B83C7010045B247 /* ProfileEntity.swift */,
-				E2B8B2832B83C6EE0045B247 /* ProfileLoadResult.swift */,
 				E2B8B27F2B83C50D0045B247 /* ProfileViewController.storyboard */,
 				E2B8B27D2B83C4EF0045B247 /* ProfileViewController.swift */,
 				E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */,
@@ -263,6 +264,43 @@
 				E2F67AE32B82423F0087CD7D /* Splash */,
 			);
 			path = Screen;
+			sourceTree = "<group>";
+		};
+		E2D3CD522B83DD60004999CA /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				E2D3CD572B83E198004999CA /* Mushroom */,
+				E2D3CD562B83E03A004999CA /* Profile */,
+				E2D3CD552B83E027004999CA /* Login */,
+				E2D3CD532B83DD6E004999CA /* ApiRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		E2D3CD552B83E027004999CA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */,
+				E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */,
+				E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E2D3CD562B83E03A004999CA /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E2B8B2832B83C6EE0045B247 /* ProfileFetchResult.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E2D3CD572B83E198004999CA /* Mushroom */ = {
+			isa = PBXGroup;
+			children = (
+				E2E9464E2B839C6500E5F68E /* MushroomFetchResult.swift */,
+			);
+			path = Mushroom;
 			sourceTree = "<group>";
 		};
 		E2E719EA2B83A7A900CB6665 /* Details */ = {
@@ -299,9 +337,6 @@
 		E2F67AEE2B824C240087CD7D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				E2D3CD4A2B83D58B004999CA /* LoginSubmitFailureReason.swift */,
-				E2D3CD4C2B83D5A2004999CA /* LoginSubmitInputFields.swift */,
-				E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */,
 				E2F67AF12B824C420087CD7D /* LoginViewController.storyboard */,
 				E2F67AEF2B824C340087CD7D /* LoginViewController.swift */,
 				E2F67AFD2B836BFB0087CD7D /* LoginViewModel.swift */,
@@ -534,11 +569,12 @@
 				E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */,
 				E2B8B2862B83C7010045B247 /* ProfileEntity.swift in Sources */,
 				E22EF9312B811CA700C8674F /* AppDelegate.swift in Sources */,
+				E2D3CD542B83DD6E004999CA /* ApiRepository.swift in Sources */,
 				E22EF9332B811CA700C8674F /* SceneDelegate.swift in Sources */,
 				E2B8B27E2B83C4EF0045B247 /* ProfileViewController.swift in Sources */,
 				E2E946432B838AF700E5F68E /* HomeViewController.swift in Sources */,
 				E2E9464B2B83905A00E5F68E /* HomeTableView.swift in Sources */,
-				E2E9464F2B839C6500E5F68E /* HomeLoadResult.swift in Sources */,
+				E2E9464F2B839C6500E5F68E /* MushroomFetchResult.swift in Sources */,
 				E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */,
 				E2D3CD4B2B83D58B004999CA /* LoginSubmitFailureReason.swift in Sources */,
 				E2E719F62B83AE6200CB6665 /* DetailsTableView.swift in Sources */,
@@ -547,7 +583,7 @@
 				E2F67B002B836C1E0087CD7D /* LoginSubmitResult.swift in Sources */,
 				E2E946492B838E4600E5F68E /* HomeTableCellItemView.swift in Sources */,
 				E2F67AFE2B836BFB0087CD7D /* LoginViewModel.swift in Sources */,
-				E2B8B2842B83C6EE0045B247 /* ProfileLoadResult.swift in Sources */,
+				E2B8B2842B83C6EE0045B247 /* ProfileFetchResult.swift in Sources */,
 				E2E719EC2B83A7B300CB6665 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
