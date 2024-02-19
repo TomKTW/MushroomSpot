@@ -7,9 +7,20 @@
 
 import Foundation
 import Alamofire
+import UIKit
 
 /** Repository for providing API requests. */
 class ApiRepository {
+    
+    /** Application delegate for getting other objects from application scope. */
+    let appDelegate: AppDelegate
+    
+    init(_ appDelegate: AppDelegate) {
+        self.appDelegate = appDelegate
+    }
+    
+    /** Instance of setting repository. */
+    var settingRepository: SettingRepository { appDelegate.settingRepository }
     
     /** Base for API URL path. */
     let baseUrl = "https://demo5845085.mockable.io/"
@@ -36,7 +47,9 @@ class ApiRepository {
     
     /** Fetches a list of mushroom from backend and provides the result on callback. */
     func fetchMushrooms(callback: @escaping (MushroomFetchResult) -> ()) {
-        AF.request(baseUrl + "api/v1/mushrooms", method: .get).responseString { response in
+        AF.request(baseUrl + "api/v1/mushrooms", method: .get, headers: [
+            "Authorization": "Basic \(settingRepository.authToken.orEmpty())"
+        ]).responseString { response in
             let result: MushroomFetchResult = switch (response.result) {
             case .success(let responseString):
                 if let dictionary = responseString.toJsonObjectAsDictionary(),
@@ -60,7 +73,9 @@ class ApiRepository {
     
     /** Fetches profile information about user from backend and provides the result on callback. */
     func fetchProfile(callback: @escaping (ProfileFetchResult) -> ()) {
-        AF.request(baseUrl + "/users/me", method: .get).responseString { response in
+        AF.request(baseUrl + "/users/me", method: .get, headers: [
+            "Authorization": "Basic \(settingRepository.authToken.orEmpty())"
+        ]).responseString { response in
             let result: ProfileFetchResult = switch (response.result) {
             case .success(let responseString):
                 if let dictionary = responseString.toJsonObjectAsDictionary(),

@@ -52,6 +52,8 @@
 		E2F67B002B836C1E0087CD7D /* LoginSubmitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */; };
 		E2FDB63F2B840303009C0AEF /* SettingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB63E2B840303009C0AEF /* SettingRepository.swift */; };
 		E2FDB6412B8403A1009C0AEF /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB6402B8403A1009C0AEF /* SplashViewModel.swift */; };
+		E2FDB6442B840DE2009C0AEF /* SettingRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB6432B840DE2009C0AEF /* SettingRepositoryTest.swift */; };
+		E2FDB6462B840EE0009C0AEF /* ApiRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB6452B840EE0009C0AEF /* ApiRepositoryTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,8 @@
 		E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitResult.swift; sourceTree = "<group>"; };
 		E2FDB63E2B840303009C0AEF /* SettingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRepository.swift; sourceTree = "<group>"; };
 		E2FDB6402B8403A1009C0AEF /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		E2FDB6432B840DE2009C0AEF /* SettingRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRepositoryTest.swift; sourceTree = "<group>"; };
+		E2FDB6452B840EE0009C0AEF /* ApiRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepositoryTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				E22EF9472B811CA800C8674F /* MushroomSpotTests.swift */,
+				E2FDB6432B840DE2009C0AEF /* SettingRepositoryTest.swift */,
+				E2FDB6452B840EE0009C0AEF /* ApiRepositoryTest.swift */,
 			);
 			path = MushroomSpotTests;
 			sourceTree = "<group>";
@@ -612,6 +618,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2FDB6442B840DE2009C0AEF /* SettingRepositoryTest.swift in Sources */,
+				E2FDB6462B840EE0009C0AEF /* ApiRepositoryTest.swift in Sources */,
 				E22EF9482B811CA800C8674F /* MushroomSpotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
