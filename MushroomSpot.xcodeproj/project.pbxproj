@@ -18,6 +18,7 @@
 		E22EF9522B811CA800C8674F /* MushroomSpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9512B811CA800C8674F /* MushroomSpotUITests.swift */; };
 		E22EF9542B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9532B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift */; };
 		E248685D2B837D320086D4E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E248685C2B837D320086D4E1 /* Alamofire */; };
+		E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24868602B83883D0086D4E1 /* StringExtension.swift */; };
 		E2F67AE82B8243520087CD7D /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */; };
 		E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AE92B8243770087CD7D /* SplashViewController.swift */; };
 		E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */; };
@@ -67,6 +68,7 @@
 		E22EF94D2B811CA800C8674F /* MushroomSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MushroomSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22EF9512B811CA800C8674F /* MushroomSpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITests.swift; sourceTree = "<group>"; };
 		E22EF9532B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E24868602B83883D0086D4E1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
 		E2F67AE92B8243770087CD7D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 			children = (
 				E2F67AEC2B82441F0087CD7D /* ViewControllerExtension.swift */,
 				E2F67AFB2B825A950087CD7D /* ViewExtension.swift */,
+				E24868602B83883D0086D4E1 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				E2F67AED2B82441F0087CD7D /* ViewControllerExtension.swift in Sources */,
 				E22EF9312B811CA700C8674F /* AppDelegate.swift in Sources */,
 				E22EF9332B811CA700C8674F /* SceneDelegate.swift in Sources */,
+				E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */,
 				E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */,
 				E2F67B002B836C1E0087CD7D /* LoginSubmitResult.swift in Sources */,
 				E2F67AFE2B836BFB0087CD7D /* LoginViewModel.swift in Sources */,

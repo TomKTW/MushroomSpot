@@ -9,7 +9,7 @@ import UIKit
 
 /** Screen for user authorization to access further content of this application. */
 class LoginViewController: UIViewController {
-
+    
     /** Input field for e-mail address. */
     @IBOutlet weak var emailInput: UITextField!
     
@@ -24,23 +24,31 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Autofill in debug only for testing.
+        #if DEBUG
+        emailInput.text = "john.doe@example.com"
+        passwordInput.text = "Test123!"
+        #endif
         // On submit button tap, submit the data.
         submitButton.setOnTap(to: self) { this in this.viewModel.submit(
-            email: this.emailInput.text,
-            password: this.passwordInput.text
+            email: this.emailInput.text.orEmpty(),
+            password: this.passwordInput.text.orEmpty()
         )}
         // When results are received for submitting data, go to specific event for it.
         viewModel.onSubmit = { [weak self] (result) in
             guard let this = self else { return }
             switch result {
-            case .success: this.onSubmitSuccess()
+            case .success(let authToken): this.onSubmitSuccess(authToken: authToken)
             case .failure(let reason): this.onSubmitFailure(reason: reason)
             }
         }
     }
     
     /** Invokes event when authorization has been successful. */
-    func onSubmitSuccess() {
+    func onSubmitSuccess(authToken: String) {
+        let alert = UIAlertController(title: "Success", message: authToken, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
         navigateToHome()
     }
     
@@ -60,6 +68,8 @@ class LoginViewController: UIViewController {
                 fatalError("Failure reason is invalid field, but there are no invalid fields provided in array.")
             }
             showErrorDialog(message: message)
+        case .network:
+            showErrorDialog(message: "Your request could not be processed. Please try again later.")
         }
     }
     
