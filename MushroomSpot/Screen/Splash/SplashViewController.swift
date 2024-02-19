@@ -10,20 +10,22 @@ import UIKit
 /** Screen used on app launch to perform initial logic for navigating the user to proper screen. */
 class SplashViewController: UIViewController {
     
+    private let viewModel = SplashViewModel()
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        load()
-    }
-    
-    /** Performs initial logic to load needed data for performing further navigation. */
-    func load() {
-        // Note: Current implementation is to just navigate to login screen for now.
-        navigateToLogin()
+        // Based on login state, check where user should be navigated to.
+        viewModel.isLoggedIn() ? navigateToHome() : navigateToLogin()
     }
     
     /** Navigates to login screen for authentication. */
     func navigateToLogin() {
         navigationPushViewController(createViewController(of: LoginViewController.self))
+    }
+    
+    /** Navigates to home screen. */
+    func navigateToHome() {
+        navigationPushViewController(createViewController(of: HomeViewController.self))
     }
     
 }

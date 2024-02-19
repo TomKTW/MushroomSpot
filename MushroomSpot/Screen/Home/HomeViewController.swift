@@ -62,9 +62,21 @@ class HomeViewController: UIViewController {
         navigationPushViewController(controller)
     }
     
-    /** Event for clicking on logout button. This will log them out and navigate back to login screen. */
+    /** Event for clicking on logout button. An alert dialog prompt will be presented to ask them for logout confirmation and navigating back to login screen. */
     @objc func onLogoutButtonTap(sender: Any) {
-        navigationPopViewController()
+        let alert = UIAlertController(
+            title: String(localized: "home_logout_prompt_title"),
+            message: String(localized: "home_logout_prompt_message"),
+            preferredStyle: .alert
+        )
+        alert.addAction(UIAlertAction(
+            title: String(localized: "home_logout_prompt_confirm_action"),
+            style: .default) { [weak self] (action) in guard let this = self else { return }
+                this.viewModel.clearAuthToken()
+                this.navigationPopViewController()
+            }
+        )
+        present(alert, animated: true, completion: nil)
     }
     
     /** Event for clicking on profile button. This will display profile screen modally. */

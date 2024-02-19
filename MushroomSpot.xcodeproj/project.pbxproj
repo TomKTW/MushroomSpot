@@ -50,6 +50,8 @@
 		E2F67AFC2B825A950087CD7D /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AFB2B825A950087CD7D /* ViewExtension.swift */; };
 		E2F67AFE2B836BFB0087CD7D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AFD2B836BFB0087CD7D /* LoginViewModel.swift */; };
 		E2F67B002B836C1E0087CD7D /* LoginSubmitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */; };
+		E2FDB63F2B840303009C0AEF /* SettingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB63E2B840303009C0AEF /* SettingRepository.swift */; };
+		E2FDB6412B8403A1009C0AEF /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FDB6402B8403A1009C0AEF /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +124,8 @@
 		E2F67AFB2B825A950087CD7D /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		E2F67AFD2B836BFB0087CD7D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		E2F67AFF2B836C1E0087CD7D /* LoginSubmitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSubmitResult.swift; sourceTree = "<group>"; };
+		E2FDB63E2B840303009C0AEF /* SettingRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRepository.swift; sourceTree = "<group>"; };
+		E2FDB6402B8403A1009C0AEF /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +288,7 @@
 				E2D3CD562B83E03A004999CA /* Profile */,
 				E2D3CD552B83E027004999CA /* Login */,
 				E2D3CD532B83DD6E004999CA /* ApiRepository.swift */,
+				E2FDB63E2B840303009C0AEF /* SettingRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 			children = (
 				E2F67AE72B8243520087CD7D /* SplashViewController.storyboard */,
 				E2F67AE92B8243770087CD7D /* SplashViewController.swift */,
+				E2FDB6402B8403A1009C0AEF /* SplashViewModel.swift */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -584,12 +590,14 @@
 				E22EF9332B811CA700C8674F /* SceneDelegate.swift in Sources */,
 				E2B8B27E2B83C4EF0045B247 /* ProfileViewController.swift in Sources */,
 				E2E946432B838AF700E5F68E /* HomeViewController.swift in Sources */,
+				E2FDB6412B8403A1009C0AEF /* SplashViewModel.swift in Sources */,
 				E2E9464B2B83905A00E5F68E /* HomeTableView.swift in Sources */,
 				E2E9464F2B839C6500E5F68E /* MushroomFetchResult.swift in Sources */,
 				E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */,
 				E2D3CD4B2B83D58B004999CA /* LoginSubmitFailureReason.swift in Sources */,
 				E2CF24AB2B83F12B009654C7 /* MushroomEntity.swift in Sources */,
 				E2E719F62B83AE6200CB6665 /* DetailsTableView.swift in Sources */,
+				E2FDB63F2B840303009C0AEF /* SettingRepository.swift in Sources */,
 				E2E9464D2B839AF700E5F68E /* HomeViewModel.swift in Sources */,
 				E2F67AEA2B8243770087CD7D /* SplashViewController.swift in Sources */,
 				E2F67B002B836C1E0087CD7D /* LoginSubmitResult.swift in Sources */,

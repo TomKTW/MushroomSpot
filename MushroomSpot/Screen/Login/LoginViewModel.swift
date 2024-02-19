@@ -15,6 +15,9 @@ class LoginViewModel: NSObject {
     /** Instance of API repository. */
     var apiRepository: ApiRepository { (UIApplication.shared.delegate as! AppDelegate).apiRepository }
     
+    /** Instance of setting repository. */
+    var settingRepository: SettingRepository { (UIApplication.shared.delegate as! AppDelegate).settingRepository }
+    
     /** Callback closure for login submission. */
     var onSubmit: ((LoginSubmitResult) -> Void)? = nil
     
@@ -36,6 +39,11 @@ class LoginViewModel: NSObject {
         } else {
             onSubmit?(.failure(reason: .invalidField(fields: invalidFields)))
         }
+    }
+    
+    /** Sets authorization token from stored settings.*/
+    func setAuthToken(_ token: String?) {
+        settingRepository.authToken = token
     }
     
     /** Returns true if provided string is a valid e-mail address. */

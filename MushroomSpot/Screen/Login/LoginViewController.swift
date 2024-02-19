@@ -57,6 +57,7 @@ class LoginViewController: UIViewController {
     
     /** Invokes event when authorization has been successful. */
     private func onSubmitSuccess(authToken: String) {
+        viewModel.setAuthToken(authToken)
         navigateToHome()
     }
     

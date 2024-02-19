@@ -15,6 +15,9 @@ class HomeViewModel: NSObject {
     /** Instance of API repository. */
     var apiRepository: ApiRepository { (UIApplication.shared.delegate as! AppDelegate).apiRepository }
     
+    /** Instance of setting repository. */
+    var settingRepository: SettingRepository { (UIApplication.shared.delegate as! AppDelegate).settingRepository }
+    
     /** Callback closure for load request. */
     var onLoad: ((MushroomFetchResult) -> Void)? = nil
     
@@ -24,5 +27,10 @@ class HomeViewModel: NSObject {
             this.onLoad?(result)
         }
     }
-            
+    
+    /** Clears authorization token from stored settings.*/
+    func clearAuthToken() {
+        settingRepository.authToken = nil
+    }
+    
 }

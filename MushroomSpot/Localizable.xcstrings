@@ -44,6 +44,36 @@
         }
       }
     },
+    "home_logout_prompt_confirm_action" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirm"
+          }
+        }
+      }
+    },
+    "home_logout_prompt_message" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to log out?"
+          }
+        }
+      }
+    },
+    "home_logout_prompt_title" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logout"
+          }
+        }
+      }
+    },
     "home_profile_button_action" : {
       "localizations" : {
         "en" : {
