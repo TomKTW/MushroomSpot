@@ -15,11 +15,9 @@ class HomeTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
         
     let itemCellIdentifier = "HomeTableCellItemView"
     
-    var values: [MushroomEntity] = [
-        MushroomEntity(id: "1", name: "Test 1", latinName: "Test A", profilePicture: UIImage.logo),
-        MushroomEntity(id: "2", name: "Test 2", latinName: "Test B", profilePicture: UIImage.logo),
-        MushroomEntity(id: "3", name: "Test 3", latinName: "Test C", profilePicture: UIImage.logo)
-    ]
+    var onTap: ((MushroomEntity) -> Void)? = nil
+    
+    var values: [MushroomEntity] = []
     
     func initialize() {
         delegate = self
@@ -38,7 +36,8 @@ class HomeTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = dequeueItemCell(tableView: tableView, for: indexPath) else { return UITableViewCell() }
         let item = values[indexPath.item]
-        cell.titleLabel.text = (item.name ?? "-") + "\n" + (item.latinName ?? "-")
+        cell.contentLayout.setOnTap(to: self) { this in this.onTap?(item) }
+        cell.titleLabel.text = item.name ?? "-"
         cell.iconImage.image = item.profilePicture
         return cell
     }

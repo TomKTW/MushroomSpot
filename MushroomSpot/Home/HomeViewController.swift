@@ -16,8 +16,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.onLoad = { [weak self] (result) in
-            guard let this = self else { return }
+        contentTable.onTap = { [weak self] (item) in guard let this = self else { return }
+            this.navigateToDetails(item: item)
+        }
+        viewModel.onLoad = { [weak self] (result) in guard let this = self else { return }
             switch result {
             case .success(let items):
                 this.contentTable.values = items
@@ -27,6 +29,12 @@ class HomeViewController: UIViewController {
             }
         }
         viewModel.load()
+    }
+    
+    func navigateToDetails(item: MushroomEntity) {
+        let controller = createViewController(of: DetailsViewController.self)
+        controller?.item = item
+        navigationPushViewController(controller)
     }
     
 }
