@@ -19,6 +19,7 @@
 		E22EF9542B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22EF9532B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift */; };
 		E248685D2B837D320086D4E1 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = E248685C2B837D320086D4E1 /* Alamofire */; };
 		E24868612B83883D0086D4E1 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24868602B83883D0086D4E1 /* StringExtension.swift */; };
+		E27FA8D42B842C260030DE0B /* LoginViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27FA8D32B842C260030DE0B /* LoginViewModelTest.swift */; };
 		E2B8B27E2B83C4EF0045B247 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B27D2B83C4EF0045B247 /* ProfileViewController.swift */; };
 		E2B8B2802B83C50D0045B247 /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B8B27F2B83C50D0045B247 /* ProfileViewController.storyboard */; };
 		E2B8B2822B83C6CD0045B247 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */; };
@@ -95,6 +96,7 @@
 		E22EF9512B811CA800C8674F /* MushroomSpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITests.swift; sourceTree = "<group>"; };
 		E22EF9532B811CA800C8674F /* MushroomSpotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MushroomSpotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E24868602B83883D0086D4E1 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		E27FA8D32B842C260030DE0B /* LoginViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTest.swift; sourceTree = "<group>"; };
 		E2B8B27D2B83C4EF0045B247 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2B8B27F2B83C50D0045B247 /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
 		E2B8B2812B83C6CD0045B247 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				E22EF9472B811CA800C8674F /* MushroomSpotTests.swift */,
 				E2FDB6432B840DE2009C0AEF /* SettingRepositoryTest.swift */,
 				E2FDB6452B840EE0009C0AEF /* ApiRepositoryTest.swift */,
+				E27FA8D32B842C260030DE0B /* LoginViewModelTest.swift */,
 			);
 			path = MushroomSpotTests;
 			sourceTree = "<group>";
@@ -620,6 +623,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27FA8D42B842C260030DE0B /* LoginViewModelTest.swift in Sources */,
 				E2FDB6442B840DE2009C0AEF /* SettingRepositoryTest.swift in Sources */,
 				E2FDB6462B840EE0009C0AEF /* ApiRepositoryTest.swift in Sources */,
 				E22EF9482B811CA800C8674F /* MushroomSpotTests.swift in Sources */,
