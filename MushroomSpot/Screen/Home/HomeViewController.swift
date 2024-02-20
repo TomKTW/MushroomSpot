@@ -73,7 +73,7 @@ class HomeViewController: UIViewController {
             title: String(localized: "home_logout_prompt_confirm_action"),
             style: .default) { [weak self] (action) in guard let this = self else { return }
                 this.viewModel.clearAuthToken()
-                this.navigationPopViewController()
+                this.navigateBackToLogin()
             }
         )
         present(alert, animated: true, completion: nil)
@@ -84,6 +84,19 @@ class HomeViewController: UIViewController {
         if let controller = createViewController(of: ProfileViewController.self) {
             controller.sheetPresentationController?.detents = [.custom { _ in 200 }]
             present(controller, animated: true)
+        }
+    }
+    
+    /** Navigates back to login screen.. */
+    func navigateBackToLogin() {
+        if var viewControllers = navigationController?.viewControllers {
+            // Navigate to login view controller if exists, otherwise clear whole stack and push splash and login controllers.
+            if let loginViewController = viewControllers.first(where: { $0 is LoginViewController}) {
+                navigationController?.popToViewController(loginViewController, animated: true)
+            } else if let splashViewController = createViewController(of: SplashViewController.self),
+                let loginViewController = createViewController(of: LoginViewController.self) {
+                navigationController?.setViewControllers([splashViewController, loginViewController], animated: true)
+            }
         }
     }
     
