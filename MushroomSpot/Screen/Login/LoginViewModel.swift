@@ -47,7 +47,7 @@ class LoginViewModel: NSObject {
     }
     
     /** Returns true if provided string is a valid e-mail address. */
-    private func validateEmail(value: String) -> Bool {
+    func validateEmail(value: String) -> Bool {
         // Note: Validation might have some edge cases:
         // https://en.wikipedia.org/wiki/Email_address#Examples
         // https://www.netmeister.org/blog/email.html
@@ -57,7 +57,7 @@ class LoginViewModel: NSObject {
     }
     
     /** Returns true if provided string is a valid password. */
-    private func validatePassword(value: String) -> Bool {
+    func validatePassword(value: String) -> Bool {
         // Note: Validating password on client-side can cause issues
         // since it's possible that user's password stored
         // on backend doesn't match these conditions.

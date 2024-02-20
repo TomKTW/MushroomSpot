@@ -8,7 +8,7 @@
 import UIKit
 
 /** Screen for user authorization to access further content of this application. */
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
     /** Input field for e-mail address. */
     @IBOutlet weak var emailInput: UITextField!
@@ -35,6 +35,9 @@ class LoginViewController: UIViewController {
         // Localize text strings.
         emailInput.placeholder = String(localized: "login_email_input_title")
         passwordInput.placeholder = String(localized: "login_password_input_title")
+        // Apply input field delegates.
+        emailInput.delegate = self
+        passwordInput.delegate = self
         // On submit button tap, set loading state and submit the data.
         submitButton.setOnTap(to: self) { this in
             this.setSubmitRequestInProgress(enabled: true)
@@ -102,6 +105,33 @@ class LoginViewController: UIViewController {
         passwordInput.isEnabled = !enabled
         submitButton.isUserInteractionEnabled = !enabled
         if (enabled) { submitProgress.startAnimating() } else { submitProgress.stopAnimating() }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Switch to next input on return.
+        switch textField {
+        case emailInput:
+            passwordInput.becomeFirstResponder()
+        case passwordInput:
+            passwordInput.resignFirstResponder()
+        default:
+            break
+        }
+        return false
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        // Mark input field with red color if validation has failed.
+        switch textField {
+        case emailInput: 
+            let isValid = viewModel.validateEmail(value: emailInput.text.orEmpty())
+            emailInput.backgroundColor = isValid ? UIColor.white : UIColor(named: "Colors/MaterialRed100")
+        case passwordInput:
+            let isValid =  viewModel.validatePassword(value: passwordInput.text.orEmpty())
+            passwordInput.backgroundColor = isValid ? UIColor.white : UIColor(named: "Colors/MaterialRed100")
+        default:
+            break
+        }
     }
     
 }
